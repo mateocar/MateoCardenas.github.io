@@ -4,33 +4,134 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portafolio | Mateo Cárdenas</title>
-  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Devicon -->
+  <link href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200..900&display=swap" rel="stylesheet">
+
+  <link href="style.css" rel="stylesheet">
 </head>
 <body>
+
+  <!-- HEADER -->
   <header>
-    <h1>👨‍💻 Mateo Cárdenas</h1>
-    <h2>Desarrollador Backend Junior en Python</h2>
+    <h1>👨‍💻 Mateo Cardenas Osorio</h1>
+    <h3>Backend Developer | Python & FastAPI</h3>
+    <p class="mt-3">
+      <a class="btn btn-outline-light btn-sm">📧 mateocar96@gmail.com</a>
+      <a href="https://www.linkedin.com/in/mateo-cardenas-709028171/?locale=en_US" class="btn btn-outline-light btn-sm" target="_blank">🌐 LinkedIn</a>
+      <a class="btn btn-outline-light btn-sm" target="_blank">📱 +57 300 615 7695</a>
+    </p>
   </header>
 
-  <section id="about">
-    <h3>Sobre mí</h3>
-    <p>Soy Ingeniero en Software con experiencia en Python y FastAPI. Me apasiona construir soluciones backend, aprender nuevas tecnologías y explorar el mundo de los datos.</p>
+  <!-- SOBRE MÍ -->
+  <section id="about" class="container">
+    <h2>About me</h2>
+    <p>
+      Software Engineer with 1 year of experience specializing
+      in the development of robust and scalable APIs with
+      Python and FastAPI. Passionate about technology and
+      continuous learning, with solid knowledge of relational
+      databases and data management. I combine technical
+      skills in backend with strong analytical abilities to solve
+      complex problems and optimize processes. Seeking for
+      opportunities to contribute to challenging projects that
+      will allow me to grow as a backend developer and take
+      my first steps in the field of data science.
+    </p>
   </section>
 
-  <section id="projects">
-    <h3>Proyectos</h3>
+  <!-- HABILIDADES -->
+  <section id="skills" class="container">
+    <h2>Technical Skills</h2>
+    <div class="row text-center">
+        <div class="col-md-2 col-6">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" width="58" height="58"  />
+                <p>Python</p>
+        </div>
+
+        <div class="col-md-2 col-6">
+                <i class="devicon-fastapi-plain colored" style="font-size: 3rem;"></i>
+                <p>FastApi</p>
+        </div>
+
+        <div class="col-md-2 col-6">
+            <i class="devicon-postgresql-plain colored" style="font-size: 3rem;"></i>
+            <p>PostgreSQL</p>
+        </div>
+        
+        <div class="col-md-2 col-6"><i class="devicon-github-original colored" style="font-size: 3rem;"></i>
+            <p>GitHub</p>
+        </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section id="projects" class="container">
+    <h2>Projects</h2>
+    <div class="row">
+
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="assets/img/API.png" class="card-img-top" alt="API REST">
+          <div class="card-body">
+            <h5 class="card-title">REST API with FastAPI</h5>
+            <p class="card-text">Task CRUD with Swagger documentation and connection to PostgreSQL.</p>
+            <a href="https://github.com/tuusuario/api-fastapi" class="btn btn-primary" target="_blank" >
+              <i class="bi bi-link-45deg"></i>Git</a>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="assets/img/Notes.jpg" class="card-img-top" alt="Gestión de notas">
+          <div class="card-body">
+            <h5 class="card-title">Note Management</h5>
+            <p class="card-text"> Backend of an academic app in Django RestFramework to register students, subjects, and grades.</p>
+            <a href="https://github.com/tuusuario/gestion-notas" class="btn btn-success" target="_blank" >
+              <i class="bi bi-link-45deg"></i>Git</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="assets/img/Data.jpg" class="card-img-top" alt="Automatización">
+          <div class="card-body">
+            <h5 class="card-title">Automation with Python</h5>
+            <p class="card-text">Project in progress: data exploration and analysis with Python, Pandas, and Machine Learning.</p>
+            <a href="#" class="btn btn-secondary disabled mt-auto">building 🚧</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EDUCACIÓN -->
+  <section id="education" class="container">
+    <h2>What I'm Learning</h2>
     <ul>
-      <li><a href="projects/api-tareas.html">API REST con FastAPI</a></li>
-      <li><a href="projects/gestion-notas.html">Gestión de notas (DB + Python)</a></li>
-      <li><a href="projects/automatizacion.html">Automatización con Python</a></li>
+      <li>🎓 Data science and engineering</li>
+      <li>🎓 Microsoft Azure</li>
+      <li>🎓 Docker</li>
     </ul>
   </section>
 
-  <section id="contact">
-    <h3>Contacto</h3>
-    <p>📧 <a href="mailto:tuemail@gmail.com">tuemail@gmail.com</a></p>
-    <p>💼 <a href="https://www.linkedin.com/in/tuusuario" target="_blank">LinkedIn</a></p>
-    <p>🐙 <a href="https://github.com/tuusuario" target="_blank">GitHub</a></p>
-  </section>
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Mateo Cárdenas - Junior Backend Developer</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
